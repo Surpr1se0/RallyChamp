@@ -17,18 +17,6 @@ Car::~Car() {
 
 }
 
-void Car::Show() {
-
-}
-
-void Car::Update() {
-
-}
-
-bool Car::Equal(Car C) {
-    return (id_car == C.id_car);
-}
-
 void Car::SaveFile(std::ofstream& ofs) {
     P1->SaveFile(ofs);
     P1->SaveFile(ofs);

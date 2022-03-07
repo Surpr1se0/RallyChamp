@@ -1,6 +1,7 @@
 #include "Pilot.h"
 
-Pilot::Pilot() = default;
+Pilot::Pilot()
+{}
 
 Pilot::Pilot(std::string pilot_name, int pilot_age, Data date_birth, int pilot_id)
     :pilot_name(pilot_name), pilot_age(pilot_age), date_birth(date_birth), pilot_id(pilot_id)
@@ -9,17 +10,6 @@ Pilot::Pilot(std::string pilot_name, int pilot_age, Data date_birth, int pilot_i
 
 Pilot::~Pilot() {
 
-}
-
-void Pilot::Show() {
-    std::cout << "Pilot: " << pilot_name << ";" << pilot_age << ";" << date_birth << ";" << pilot_id;
-}
-
-void Pilot::Update() {
-    this->pilot_name = pilot_name;
-    this->pilot_age = pilot_age;
-    this->date_birth = date_birth;
-    this->pilot_id = pilot_id;
 }
 
 void Pilot::SaveFile(std::ofstream & ofs) {

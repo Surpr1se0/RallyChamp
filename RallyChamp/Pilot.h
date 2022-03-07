@@ -34,8 +34,6 @@ public:
     int GetPilotId()const { return pilot_id; }
 
     //other methods
-    void Show();
-    void Update();
     void SaveFile(std::ofstream& ofs);
     void ReadFile(std::ifstream& ifs);
 

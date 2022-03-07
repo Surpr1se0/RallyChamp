@@ -25,9 +25,6 @@ public:
     int GetMonth() const { return day; }
     int GetYear() const { return day; }
 
-    //other methods
-    void Show();
-    void Update();
     void ReadFile(std::ifstream& ifs);
     void SaveFile(std::ofstream& ofs);
 

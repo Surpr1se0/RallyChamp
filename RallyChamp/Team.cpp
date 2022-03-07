@@ -6,7 +6,8 @@
 
 #include "Team.h"
 
-Team::Team() = default;
+Team::Team()
+{}
 
 Team::Team(std::string name, int points, list<Pilot*> ListPilot, list<Car*> ListCar)
     :name(name), points(points)

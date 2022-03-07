@@ -4,26 +4,16 @@
 
 Data::Data() {
 
-    time_t now = time(0); //actual date
+    time_t now = time(0);      //actual date
     tm* ltm = localtime(&now); //tm -> struct that represents the actual date/hour of the calendar
-    day = ltm->tm_mday; //tm_mday = day of the month
-    month = 1 + ltm->tm_mon; //tm_mon = n of months since Jan.
-    year = 1900 + ltm->tm_year; //tm_year = n of years since 1900
+    day = ltm->tm_mday;        //tm_mday = day of the month
+    month = 1 + ltm->tm_mon;   //tm_mon = n of months since Jan.
+    year = 1900 + ltm->tm_year;//tm_year = n of years since 1900
 }
 
 Data::Data(int day, int month, int year)
     :day(day), month(month), year(year)
 {
-}
-
-void Data::Show() {
-    std::cout << "Data: " << day << delim << month << delim << year << std::endl;
-}
-
-void Data::Update() {
-    this->day = day;
-    this->month = month;
-    this->year = year;
 }
 
 void Data::ReadFile(std::ifstream& ifs) {

@@ -40,9 +40,6 @@ public:
     //char GetDesign()const {return designa;}
 
     //other methods
-    void Show();
-    void Update();
-    bool Equal(Car C);
     void SaveFile(std::ofstream& ofs);
     void ReadFile(std::ifstream& ifs);
 
